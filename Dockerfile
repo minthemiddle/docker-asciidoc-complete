@@ -2,7 +2,7 @@
 
 FROM docker.io/asciidoctor/docker-asciidoctor
 
-RUN apk add --no-cache ghostscript
+RUN apk add --no-cache ghostscript pandoc-cli
 RUN gem install rghost
 RUN gem install text-hyphen
 RUN gem install asciidoctor-diagram
